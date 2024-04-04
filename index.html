@@ -161,7 +161,7 @@
         <img src="./static/images/results.png" class="instance_seg" alt="" width="100%"/>
       </div>
       <p>
-        PARIS3D results on the RPSeg dataset. 
+        Comparison to previous 3D part segmentation methods. Object category mIoU(%) is shown. In the 45x8+28k setting, baseline models use an additional 28k training shapes for 17 overlapping object categories. These are categories present in common with PartNet datset. For the remaining 28 non-overlapping object categories, there are only 8 shapes per object category during training. PartSLIP* indicates that one model has been trained for each category. + shows our implementation of PartSLIP where one model is trained for all the categories together.
      </p>
     </div>
 </section>  
@@ -182,11 +182,11 @@
 <section class="section">
     <div class="container is-max-desktop has-text-centered">
       <div class="is-centered">
-        <h2 class="title is-3">Quantitative Comparison</h2>
-        <img src="./static/images/quantitative_comparison.png" class="quantitative_comparison" alt="" width="100%"/>
+        <h2 class="title is-3">RPSeg Dataset</h2>
+        <img src="./static/images/traindata.png" class="quantitative_comparison" alt="" width="100%"/>
       </div>
       <p>
-        PartSLIP achieves impressive zero-shot performances, and few-shot results are highly competitive compared to the fully supervised counterparts.
+        Given a coloured point cloud P, the goal of a 3D segmentation model is to predict its label for each point. However, in our reasoning segmentation task, we go further to output a 3D segmentation mask M, given an input point cloud and an implicit query text instruction. The complexity of the query text in reasoning part segmentation is a key differentiator. Instead of providing the names of the parts, the query text may include more intricate expressions that involve an understanding of structures, geometries, and semantics of 3D objects. By introducing this task, we aim to bridge the gap between user intent and system response, enabling more intuitive and dynamic interactions in 3D object perception.
      </p>
     </div>
 </section>  
