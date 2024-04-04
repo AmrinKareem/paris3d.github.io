@@ -82,7 +82,7 @@
               </span>
 
               <span class="link-block">
-                <a href="./static/slides.pdf"
+                <a href="./static/PARIS3D.pdf"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fa fa-desktop"></i>
@@ -136,7 +136,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/VGORtR2mJog"
+          <iframe src="https://youtu.be/aJMQCJJObzU?feature=shared"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -148,7 +148,7 @@
 <section class="section">
     <div class="container is-max-desktop has-text-centered">
       <div class="is-centered">
-        <h2 class="title is-3">Overall Pipeline</h2>
+        <h2 class="title is-3">Architecture</h2>
         <img src="./static/images/architecturefin.png" class="pipeline" alt=""/>
       </div>
     </div>
@@ -158,10 +158,10 @@
     <div class="container is-max-desktop has-text-centered">
       <div class="is-centered">
         <h2 class="title is-3">Semantic Segmentation Results</h2>
-        <img src="./static/images/results.png" class="instance_seg" alt="" width="60%"/>
+        <img src="./static/images/results.png" class="instance_seg" alt="" width="100%"/>
       </div>
       <p>
-        PARIS3D results on the RPSeg dataset. Different part instances are in different colors.
+        PARIS3D results on the RPSeg dataset. 
      </p>
     </div>
 </section>  
@@ -169,11 +169,12 @@
 <section class="section">
     <div class="container is-max-desktop has-text-centered">
       <div class="is-centered">
-        <h2 class="title is-3">Real-World Point Clouds</h2>
+        <h2 class="title is-3">Generalizability Experiments</h2>
         <img src="./static/images/realpc.drawio.png" class="realworld" alt="" width="100%"/>
       </div>
       <p>
-        PartSLIP can be directly applied to real-world point clouds without encountering significant domain gap: iPhone-scanned point clouds (first row), text prompts (second row), and PartSLIP (8-shot) results (third row).
+       To demonstrate the generalizability of PARIS3D to data derived from the real world, we perform our 3D segmentation on real point clouds shot using a smartphone's LiDAR sensor, as suggested by <a
+              href="https://github.com/Colin97/PartSLIP_page">this paper</a>. In the image, we show qualitative examples of passing the fused point clouds through the PARIS3D architecture to obtain part segmentation labels as in the previous experiments without much drop in performance.
      </p>
     </div>
 </section>  
@@ -194,13 +195,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code> @inproceedings{liu2023partslip,
-        title={Partslip: Low-shot part segmentation for 3d point clouds via pretrained image-language models},
-        author={Liu, Minghua and Zhu, Yinhao and Cai, Hong and Han, Shizhong and Ling, Zhan and Porikli, Fatih and Su, Hao},
-        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-        pages={21736--21746},
-        year={2023}
-      }</code></pre>
+    <pre><code> BIBTEXXXXXXXXXXXXXXXXXXXXX</code></pre>
   </div>
 </section>
 
@@ -212,7 +207,7 @@
          href="https://arxiv.org/pdf/2212.01558.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/Colin97/PartSLIP" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/AmrinKareem/PARIS3D" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
